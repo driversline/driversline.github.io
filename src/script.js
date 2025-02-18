@@ -11,9 +11,9 @@ async function displayStats() {
     const statsDiv = document.getElementById('stats');
     statsDiv.innerHTML = `
         <h2><span>${stats.login}</span></h2>
-        <p>Репозиториев: <span>${stats.public_repos}</span></p>
-        <p>Подписчиков: <span>${stats.followers}</span></p>
-        <p>Звезд: <span>${stats.public_gists}</span></p>
+        <p>Repositories: <span>${stats.public_repos}</span></p>
+        <p>Followers: <span>${stats.followers}</span></p>
+        <p>Gists: <span>${stats.public_gists}</span></p>
     `;
 }
 
