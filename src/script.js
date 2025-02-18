@@ -5,15 +5,15 @@ async function fetchGitHubStats(username) {
 }
 
 async function displayStats() {
-    const username = 'driversline'; // Ваше имя пользователя
+    const username = 'driversline';
     const stats = await fetchGitHubStats(username);
     
     const statsDiv = document.getElementById('stats');
     statsDiv.innerHTML = `
-        <h2>${stats.login}</h2>
-        <p>Количество репозиториев: ${stats.public_repos}</p>
-        <p>Количество подписчиков: ${stats.followers}</p>
-        <p>Количество звезд: ${stats.public_gists}</p>
+        <h2><span>${stats.login}</span></h2>
+        <p>Репозиториев: <span>${stats.public_repos}</span></p>
+        <p>Подписчиков: <span>${stats.followers}</span></p>
+        <p>Звезд: <span>${stats.public_gists}</span></p>
     `;
 }
 
